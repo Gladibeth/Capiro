@@ -169,6 +169,9 @@ body {
 .container-fluid{
   padding: 0 5rem;
 }
+.container-fluidLarge{
+  padding: 0 10rem;
+}
 section {
   padding: 10px 0 80px 0;
   position: relative;
@@ -237,21 +240,23 @@ section {
 
 .btn--small {
   min-width: 65px;
-  font-size: 12px;
+  font-size: 18px;
   height: 41px;
   border-radius: 3px;
   display: flex;
   justify-content: center;
+  line-height: 10px;
+  font-weight: bold;
 }
 
 .btn--medium {
-  padding: 12px 40px 12px 40px;
+  padding: 8px 50px 8px 50px;
   min-width: 85px;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .btn--large {
-  padding: 12px 55px 12px 20px;
+  padding: 12px 20px 12px 20px;
   min-width: 105px;
   font-size: 16px;
 }
@@ -461,7 +466,7 @@ button:focus {
 .main-banner {
   position: relative;
   overflow: hidden;
-  margin-top: -55px;
+  margin-top: -50px;
 }
 
 /* .main-banner .main-banner__item {
@@ -503,7 +508,7 @@ button:focus {
 }
 .main-banner__text{
   padding-left: 5rem;
-  padding-top: 6rem;
+  padding-top: 5.5rem;
 }
 .main-banner__title{
   position: relative;
@@ -511,10 +516,10 @@ button:focus {
 .main-banner__title:after{
   position: absolute;
   content: '';
-  width: 7.5rem;
+  width: 9rem;
   height: 1px;
   background-color: #52b02e;
-  bottom: -2rem;
+  bottom: -1.5rem;
   left: -5rem;
 }
 .main-banner__title h1, .main-banner__title span{
@@ -537,10 +542,21 @@ button:focus {
 .main-banner__dates{
   display: flex;
   flex-direction: column;
-  margin-top: 3rem;
+  margin-top: 3.2rem;
 }
 .main-banner__dates--first{
-  margin-top: 4rem;
+  margin-top: 3rem;
+}
+.main-banner__dates--two{
+  margin-top: 1.5rem;
+}
+
+.main-banner__dates:last-child span{
+  font-size: 30px;
+}
+.main-banner__dates:last-child span strong{
+  font-size: 34px;
+  font-weight: 500;
 }
 .main-banner__dates span, .main-banner__dates strong,
 .main-banner__dates p{
@@ -555,6 +571,7 @@ button:focus {
 }
 .main-banner__dates span{
   font-weight: 200;
+  font-size: 25px;
 }
 .main-banner__dates p{
   text-transform: uppercase;
@@ -562,10 +579,13 @@ button:focus {
 .main-banner__dates strong{
   font-weight: 500;
 }
+.main-banner__dates--first strong{
+  font-weight: 800 !important;
+}
 .main-banner__value{
   font-family: Poppins;
-  font-size: 18px !important;
-  font-weight: normal;
+  font-size: 20px !important;
+  font-weight: 400 !important;
   font-stretch: normal;
   font-style: italic !important;
   line-height: normal;
@@ -677,12 +697,12 @@ button:focus {
   text-transform: uppercase;
 }
 .main-title__general p strong{
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .main-description__general p{
   font-family: Poppins;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -750,7 +770,7 @@ button:focus {
 }
 .main-oneform__item form{
   display: grid;
-  grid-template-columns: 35% 55%;
+  grid-template-columns: 35% 50%;
   grid-gap: 1rem;
 }
 
@@ -871,7 +891,7 @@ select option{
   text-transform: uppercase;
 }
 .main-details__description p{
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.47;
   letter-spacing: 0.04px;
   color: #474747;
@@ -985,6 +1005,11 @@ select option{
 .main-gallery__content .slick-next {
   left: 3rem;
   opacity: 0.5;
+  transition: 0.3s ease-in-out;
+}
+.main-gallery__content .slick-next:hover {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
 }
 
 .main-gallery__content .slick-prev:before,.main-gallery__content .slick-next:before {
@@ -1049,7 +1074,7 @@ select option{
 .main-zone__list{
   display: flex;
   align-items: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 .main-zone__list .main-zone__listimg{
   margin-right: 0.5rem;
@@ -1059,7 +1084,7 @@ select option{
   font-size: 15px;
 }
 .main-zone__img{
-  padding-top: 3rem;
+  padding-top: 2.5rem;
   height: 500px;
 }
 .main-zone__img img{
@@ -1123,6 +1148,10 @@ select option{
 }
 
 
+.main-contact__btnbox{
+  margin-top: 2rem;
+}
+
 
 
 .main-twoform input[type="text"],
@@ -1135,6 +1164,7 @@ select option{
   border-radius: 3px;
   border: solid 1px #dee2e6;
   height: 40px;
+  background-color: #f5f5f5;
 }
 
 .main-twoform input[type="text"]:focus,
@@ -1197,6 +1227,10 @@ ul.menu{
   color: #fff;
   font-weight: 600;
 }
+
+.main-footer__item:nth-child(2){
+  padding-left: 2rem;
+}
 ul.menu li a,dd a{
   font-family: Poppins;
   font-size: 16px;
@@ -1250,5 +1284,55 @@ ul.menu li a:hover, dd a:hover{
 }
 .main-maps .main-zone__item:nth-child(2){
   padding-top: 5rem;
+}
+
+.main-maps__img{
+  position: relative;
+}
+.main-maps__img:after {
+  content: '\f00e';
+  position: absolute;
+  font-size: 20px;
+  font-family: 'FontAwesome';
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%);
+  opacity: 0;
+  color: rgba(0, 0, 0, 0.7);
+  transition: 0.3s ease-in-out;
+  background-color: #fff;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  z-index: 9;
+}
+
+.main-maps__img:hover:after {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+
+.main-gallery__img:before {
+  content: '\f00e';
+  position: absolute;
+  font-size: 20px;
+  font-family: 'FontAwesome';
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%);
+  opacity: 0;
+  color: rgba(0, 0, 0, 0.7);
+  transition: 0.3s ease-in-out;
+  background-color: #fff;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  z-index: 99;
+}
+.main-gallery__img:hover:before {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
 }
 
