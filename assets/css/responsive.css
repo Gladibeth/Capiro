@@ -197,6 +197,20 @@
     display: flex;
     justify-content: center;
   }
+  #myModal .close, #myModal1 .close{
+    top: 10rem;
+    right: 1rem;
+  }
+  .prev, .next{
+    top:30rem;
+  }
+  .prev {
+    left: 5rem;
+  }
+  .next {
+    right: 5rem;
+  }
+ 
   
 }
 
@@ -398,6 +412,13 @@
   .navbar-brand {
     width: 170px;
   }
+  #myModal .close, #myModal1 .close{
+    top: 5rem;
+    right: 3rem;
+  }
+  .prev, .next{
+    top:19rem;
+  }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .container-fluidLarge {
@@ -468,6 +489,17 @@
   }
   .main-twoform__img {
     height: 520px;
+  }
+  .next {
+    right: 3rem;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev{
+    left: 3rem;
+  }
+  #myModal .close, #myModal1 .close{
+    top: 2rem;
+    right: 3rem;
   }
 }
 

@@ -1336,3 +1336,162 @@ ul.menu li a:hover, dd a:hover{
   transition: 0.3s ease-in-out;
 }
 
+
+
+
+/* The Modal (background) */
+.modal {
+	display: none;
+	position: fixed;
+	/* z-index: 1; */
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal Content */
+.modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	width: 90%;
+	max-width: 1200px;
+}
+
+/* The Close Button */
+#myModal .close ,#myModal1 .close {
+	color: white !important;
+    position: absolute;
+    top: 6rem;
+    right: 7rem;
+    font-size: 35px;
+    font-weight: bold;
+    opacity: 1 !important;
+    z-index: 999;
+}
+
+.close:hover,
+.close:focus {
+	color: #999;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.mySlides, .mySlides1, .mySlides2 {
+	display: none;
+	height: 75vh;
+}
+.mySlides img, .mySlides1 img,.mySlides2 img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.cursor {
+	cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 20rem;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white !important;
+	font-weight: bold;
+	font-size: 20px;
+	transition: 0.6s ease;
+	border-radius: 0px !important;
+	user-select: none;
+	-webkit-user-select: none;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0rem;
+	border-radius: 3px 0 0 3px;
+}
+.prev{
+	left: 0rem;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+img {
+	margin-bottom: -4px;
+}
+
+.caption-container {
+	text-align: center;
+	background-color: black;
+	padding: 2px 16px;
+	color: white;
+}
+
+.demo {
+	opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+	opacity: 1;
+}
+
+img.hover-shadow {
+	transition: 0.3s;
+}
+
+.hover-shadow:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#myModal .modal-content, #myModal1 .modal-content,#myModal2 .modal-content{
+	width: 100%;
+	overflow: hidden;
+	background-color: transparent;
+	border: none;
+}
+
+#myModal .modal-content .close, #myModal1 .modal-content .close, #myModal2 .modal-content .close{
+	color: white;
+	position: absolute;
+	top: 0rem;
+    right: 0rem;
+	font-size: 30px;
+	font-weight: bold;
+	background-color: rgba(0,0,0,0.5) !important;
+	padding: 5px !important;
+	opacity: 1;
+	z-index: 999;
+}
+
+#myModal, #myModal1, #myModal2{
+	background-color: rgba(0, 0, 0, 0.9)
+}
+
+
+.mySlides .main-details__slick--img,.mySlides1 .main-details__slick--img, .mySlides2 .main-details__slick--img, .mySlides3 .main-details__slick--img{
+	/* height: 500px !important; */
+	height: 75vh !important;
+}
