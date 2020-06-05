@@ -231,7 +231,7 @@ section {
   transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
   padding: 13px 50px;
   cursor: pointer;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-family: 'Poppins';
 }
 
@@ -245,9 +245,9 @@ section {
 }
 
 .btn--medium {
-  padding: 12px 30px 12px 30px;
+  padding: 12px 40px 12px 40px;
   min-width: 85px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .btn--large {
@@ -382,7 +382,7 @@ section {
 }
 
 .nav-item {
-  padding: 0 12px;
+  padding: 0 5px;
 }
 
 
@@ -402,6 +402,7 @@ button:focus {
   font-size: 13px;
   text-transform: uppercase;
   font-family: 'Poppins', sans-serif;
+  letter-spacing: 3px;
 }
 
 .nav-item.active .nav-link{
@@ -438,7 +439,7 @@ button:focus {
 .navbar-brand {
   color: #282727;
   font-size: 25px;
-  width: 150px;
+  width: 190px;
 }
 
 .navbar-brand:hover {
@@ -460,7 +461,7 @@ button:focus {
 .main-banner {
   position: relative;
   overflow: hidden;
-  margin-top: -80px;
+  margin-top: -55px;
 }
 
 /* .main-banner .main-banner__item {
@@ -498,7 +499,7 @@ button:focus {
 
 .main-banner-grid{
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 34% 66%;
 }
 .main-banner__text{
   padding-left: 5rem;
@@ -513,12 +514,12 @@ button:focus {
   width: 7.5rem;
   height: 1px;
   background-color: #52b02e;
-  bottom: -1.5rem;
-  left: -4rem;
+  bottom: -2rem;
+  left: -5rem;
 }
 .main-banner__title h1, .main-banner__title span{
   font-family: Poppins;
-  font-size: 45px;
+  font-size: 50px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -528,9 +529,9 @@ button:focus {
   margin-bottom: 0;
 }
 .main-banner__title span{
-  font-size: 21px;
+  font-size: 25px;
   font-weight: 300;
-  letter-spacing: 12.5px;
+  letter-spacing: 18.5px;
 }
 
 .main-banner__dates{
@@ -538,10 +539,13 @@ button:focus {
   flex-direction: column;
   margin-top: 3rem;
 }
+.main-banner__dates--first{
+  margin-top: 4rem;
+}
 .main-banner__dates span, .main-banner__dates strong,
 .main-banner__dates p{
   font-family: Poppins;
-  font-size: 23px;
+  font-size: 25px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -695,6 +699,10 @@ button:focus {
   text-align: center;
 }
 
+.main-title__general.main-title__general--medium p {
+  font-size: 40px;
+}
+
 .main-title__general.main-title__general--small p{
   font-size: 30px;
 }
@@ -742,7 +750,7 @@ button:focus {
 }
 .main-oneform__item form{
   display: grid;
-  grid-template-columns: 35% 60%;
+  grid-template-columns: 35% 55%;
   grid-gap: 1rem;
 }
 
@@ -853,7 +861,7 @@ select option{
 }
 
 .main-about__item .main-description__general{
-  width: 80%;
+  width: 90%;
   margin-top: 1rem;
 }
 .main-details__title p{
@@ -917,7 +925,7 @@ select option{
 }
 .main-about__content{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 45% 55%;
 }
 .main-about__img img{
   width: 100%;
@@ -1029,7 +1037,7 @@ select option{
 }
 .main-zone__content{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 60% 40%;
 }
 .main-zone__item:nth-child(2){
   display: flex;
@@ -1052,9 +1060,12 @@ select option{
 }
 .main-zone__img{
   padding-top: 3rem;
+  height: 500px;
 }
 .main-zone__img img{
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*LOCATION*/
@@ -1074,7 +1085,7 @@ select option{
 .main-twoform__content{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 2rem;
+  grid-gap: 4rem;
   position: relative;
 }
 
@@ -1099,7 +1110,7 @@ select option{
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .main-twoform__img img{
@@ -1229,12 +1240,15 @@ ul.menu li a:hover, dd a:hover{
 .main-maps:after{
   position: absolute;
   content: '';
-  top: 8rem;
+  top:11rem;
   left: 0;
   right: 0;
   bottom: 0;
   background-image: url(../img/mask.png);
   height: 60%;
   /* opacity: 0.8; */
+}
+.main-maps .main-zone__item:nth-child(2){
+  padding-top: 5rem;
 }
 

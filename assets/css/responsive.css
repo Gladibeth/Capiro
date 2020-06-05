@@ -1,4 +1,14 @@
 @media (min-width: 0px) and (max-width: 767px) {
+  .nav-item:last-child{
+    padding-left: 1rem;
+  }
+  .nav-item{
+    padding-left: 1rem;
+  }
+  .navbar-brand {
+    width: 160px;
+  }
+  
   .offcanvas-collapse {
     position: fixed;
     top: 60px;
@@ -13,7 +23,7 @@
     transition-duration: .3s;
     transition-property: left, visibility;
     padding-top: 25px;
-    transition: 0.3s e
+    transition: 0.3s;
   }
 
   .offcanvas-collapse.open {
@@ -158,8 +168,8 @@
   .slider-for .slick-dots li.slick-active:nth-child(1):after, .slider-for .slick-dots li.slick-active:nth-child(2):after, .slider-for .slick-dots li.slick-active:nth-child(3):after, .slider-for .slick-dots li.slick-active:nth-child(4):after{
     font-size: 15px;
   }
-  .nav-item:last-child {
-    padding: 0 12px;
+  .main-title__general p,.main-title__general.main-title__general--medium p {
+    font-size: 33px;
   }
   .main-gallery__content .slick-prev, .main-gallery__content .slick-next {
     top: 18rem !important;
@@ -199,6 +209,9 @@
     padding-left: 1rem;
   }
   .nav-item:last-child{
+    padding-left: 1rem;
+  }
+  .nav-item{
     padding-left: 1rem;
   }
 
@@ -309,8 +322,12 @@
     font-size: 12px;
   }
   .main-footer__img img{
-    width: 75%;
+    width: 65%;
   }
+  .main-banner__text {
+    padding-left: 3rem;
+  }
+  
   .main-footer__item dt{
     font-size: 14px;
   }
@@ -356,8 +373,37 @@
   .main-twoform__img img{
     object-fit: cover;
   }
+  .main-title__general p,.main-title__general.main-title__general--medium p{
+    font-size: 30px;
+  }
+  .main-zone__item:nth-child(2){
+    padding-left: 1rem;
+  }
+  .navbar-brand {
+    width: 170px;
+  }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+  .nav-link{
+    letter-spacing: 2px;
+  }
+  .nav-item {
+    padding: 0 0px;
+  } 
+  .navbar-brand {
+    width: 170px;
+  }
+
+
+  .main-banner__dates{
+    margin-top: 1rem;
+  }
+  .main-banner__dates--first {
+    margin-top: 3rem;
+  }
+  .main-banner-grid {
+    grid-template-columns: 40% 60%;
+  }
   .container-fluid {
     padding: 0 2rem;
   }

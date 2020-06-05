@@ -74,15 +74,15 @@
 }
 
 .hamburger-inner.js-hamburger {
-  background-color: #52af2c;
+  background-color: #17342e;
 }
 
 .hamburger-inner.js-hamburger:before {
-  background-color: #52af2c;
+  background-color: #17342e;
 }
 
 .hamburger-inner.js-hamburger::after {
-  background-color: #52af2c;
+  background-color: #17342e;
 }
 
 .hamburger-inner,
@@ -90,7 +90,7 @@
 .hamburger-inner::after {
   width: 35px;
   height: 3px;
-  background-color: #52af2c;
+  background-color: #17342e;
   border-radius: 3px;
   position: absolute;
   transition-property: transform;
