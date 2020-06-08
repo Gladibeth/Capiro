@@ -84,13 +84,13 @@ function Banner() {
 add_action( 'init', 'Banner', 0 );
 
 // Register Custom Banner Home
-function galeriaExterior() {
+function galeria() {
 
 	$labels = array(
-		'name'                  => _x( 'galeria Exterior ', 'Post Type General Name', 'nivel' ),
-		'singular_name'         => _x( 'galeria Exterior', 'Post Type Singular Name', 'nivel' ),
-		'menu_name'             => __( 'galeria Exteriors', 'nivel' ),
-		'name_admin_bar'        => __( 'galeria Exteriors', 'nivel' ),
+		'name'                  => _x( 'Galeria', 'Post Type General Name', 'nivel' ),
+		'singular_name'         => _x( 'Galeria', 'Post Type Singular Name', 'nivel' ),
+		'menu_name'             => __( 'Galeria', 'nivel' ),
+		'name_admin_bar'        => __( 'Galeria', 'nivel' ),
 		'archives'              => __( 'Archivo', 'nivel' ),
 		'attributes'            => __( 'Atributos', 'nivel' ),
 		'parent_item_colon'     => __( 'Artículo principal', 'nivel' ),
@@ -116,7 +116,7 @@ function galeriaExterior() {
 		'filter_items_list'     => __( 'Lista de elementos de filtro', 'nivel' ),
 	);
 	$args = array(
-		'label'                 => __( 'galeria Exterior Home', 'nivel' ),
+		'label'                 => __( 'Galeria  Home', 'nivel' ),
 		'description'           => __( 'Post Type Description', 'nivel' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'thumbnail' ),
@@ -135,20 +135,20 @@ function galeriaExterior() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 	);
-	register_post_type( 'galeriaExterior', $args );
+	register_post_type( 'galeria', $args );
 
 }
-add_action( 'init', 'galeriaExterior', 0 );
+add_action( 'init', 'galeria', 0 );
 
 
 // Register Custom Banner Home
-function PlanosDelProyecto() {
+function Planos() {
 
 	$labels = array(
-		'name'                  => _x( 'Planos del Proyecto ', 'Post Type General Name', 'nivel' ),
-		'singular_name'         => _x( 'Planos del Proyecto', 'Post Type Singular Name', 'nivel' ),
-		'menu_name'             => __( 'Planos del Proyecto', 'nivel' ),
-		'name_admin_bar'        => __( 'Planos del Proyecto', 'nivel' ),
+		'name'                  => _x( 'Planos', 'Post Type General Name', 'nivel' ),
+		'singular_name'         => _x( 'Planos', 'Post Type Singular Name', 'nivel' ),
+		'menu_name'             => __( 'Planos', 'nivel' ),
+		'name_admin_bar'        => __( 'Planos', 'nivel' ),
 		'archives'              => __( 'Archivo', 'nivel' ),
 		'attributes'            => __( 'Atributos', 'nivel' ),
 		'parent_item_colon'     => __( 'Artículo principal', 'nivel' ),
@@ -174,7 +174,7 @@ function PlanosDelProyecto() {
 		'filter_items_list'     => __( 'Lista de elementos de filtro', 'nivel' ),
 	);
 	$args = array(
-		'label'                 => __( 'Planos del Proyecto', 'nivel' ),
+		'label'                 => __( 'Planos', 'nivel' ),
 		'description'           => __( 'Post Type Description', 'nivel' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'thumbnail' ),
@@ -193,11 +193,68 @@ function PlanosDelProyecto() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 	);
-	register_post_type( 'PlanosDelProyecto', $args );
+	register_post_type( 'Planos', $args );
 
 }
-add_action( 'init', 'PlanosDelProyecto', 0 );
+add_action( 'init', 'Planos', 0 );
 
+
+// Register Custom Banner Home
+function detalles() {
+
+	$labels = array(
+		'name'                  => _x( 'Detalles del proyecto', 'Post Type General Name', 'nivel' ),
+		'singular_name'         => _x( 'Detalles del proyecto', 'Post Type Singular Name', 'nivel' ),
+		'menu_name'             => __( 'Detalles del proyecto', 'nivel' ),
+		'name_admin_bar'        => __( 'Detalles del proyecto', 'nivel' ),
+		'archives'              => __( 'Archivo', 'nivel' ),
+		'attributes'            => __( 'Atributos', 'nivel' ),
+		'parent_item_colon'     => __( 'Artículo principal', 'nivel' ),
+		'all_items'             => __( 'Todos los artículos', 'nivel' ),
+		'add_new_item'          => __( 'Agregar ítem nuevo', 'nivel' ),
+		'add_new'               => __( 'Añadir nuevo', 'nivel' ),
+		'new_item'              => __( 'Nuevo artículo', 'nivel' ),
+		'edit_item'             => __( 'Editar elemento', 'nivel' ),
+		'update_item'           => __( 'Actualizar artículo', 'nivel' ),
+		'view_item'             => __( 'Ver ítem', 'nivel' ),
+		'view_items'            => __( 'Ver artículos', 'nivel' ),
+		'search_items'          => __( 'Buscar artículo', 'nivel' ),
+		'not_found'             => __( 'Extraviado', 'nivel' ),
+		'not_found_in_trash'    => __( 'No se encuentra en la basura', 'nivel' ),
+		'featured_image'        => __( 'Foto principal', 'nivel' ),
+		'set_featured_image'    => __( 'Establecer imagen destacada', 'nivel' ),
+		'remove_featured_image' => __( 'Remove featured image', 'nivel' ),
+		'use_featured_image'    => __( 'Usar como imagen destacada', 'nivel' ),
+		'insert_into_item'      => __( 'Insertar en el elemento', 'nivel' ),
+		'uploaded_to_this_item' => __( 'Subido a este artículo', 'nivel' ),
+		'items_list'            => __( 'Lista de artículos', 'nivel' ),
+		'items_list_navigation' => __( 'Lista de elementos de navegación', 'nivel' ),
+		'filter_items_list'     => __( 'Lista de elementos de filtro', 'nivel' ),
+	);
+	$args = array(
+		'label'                 => __( 'detalles', 'nivel' ),
+		'description'           => __( 'Post Type Description', 'nivel' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'thumbnail', 'editor' ),
+		'taxonomies'            => array(  ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'menu_icon'             => 'dashicons-list-view',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'detalles', $args );
+
+}
+add_action( 'init', 'detalles', 0 );
 
 
 
