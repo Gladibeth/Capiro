@@ -11,10 +11,10 @@
                   </p>
               </div>
               <div class="main-footer__icon">
-                <a  target="_blank" href="#">
+                <a  target="_blank" href="https://www.facebook.com/nivelpropiedadraiz">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/fb.png" alt="">
                 </a>
-                <a  target="_blank" href="#">
+                <a  target="_blank" href="https://www.instagram.com/nivelpropiedadraiz">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/instagram.png" alt="">
                 </a>
               </div>

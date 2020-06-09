@@ -70,7 +70,7 @@
                       <input class="form-check-input" type="checkbox">
                       <label class="form-check-label font-general main-oneform__text">
                         Acepto
-                        <a href="<?php echo get_template_directory_uri();?>/assets/pdf/MANUAL_DE_POLITICAS_PROMOTORA.pdf" target="blank">Politicas y Privacidad</a>
+                        <a href="<?php echo get_template_directory_uri();?>/assets/pdf/MANUAL_DE_POLITICAS_PROMOTORA.pdf" target="blank">Política de Privacidad</a>
                       </label>
                     </div>
                   <div class="">

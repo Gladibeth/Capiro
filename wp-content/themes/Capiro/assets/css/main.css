@@ -885,13 +885,14 @@ select option{
   margin-top: 1rem;
 }
 .main-details__title p{
-  font-size: 15px;
-  font-weight: 600;
-  color: #000000;
-  text-transform: uppercase;
+ font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 8px;
+    text-transform: uppercase;
 }
 .main-details__description p{
-  font-size: 15px;
+  font-size: 13px;
   line-height: 1.47;
   letter-spacing: 0.04px;
   color: #474747;
