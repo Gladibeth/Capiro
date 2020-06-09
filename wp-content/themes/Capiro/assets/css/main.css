@@ -445,6 +445,7 @@ button:focus {
   color: #282727;
   font-size: 25px;
   width: 220px;
+  margin-left: -1rem;
 }
 
 .navbar-brand:hover {
@@ -1126,9 +1127,11 @@ select option{
   bottom: 1rem;
   left: 2rem;
 }
-
+.main-footer__img{
+  margin-left: -1rem;
+}
 .main-footer__img img{
-  width: 50%;
+  width: 45%;
 }
 .main-footer__titleposition .main-title__general.main-title__general--small p{
   color: #fff;

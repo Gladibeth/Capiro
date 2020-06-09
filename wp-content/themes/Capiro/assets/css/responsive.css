@@ -402,7 +402,10 @@
     padding-left: 1rem;
   }
   .navbar-brand {
-    width: 170px;
+    width: 200px;
+  }
+  .btn--large{
+    font-size: 15px;
   }
   #myModal .close, #myModal1 .close{
     top: 5rem;
