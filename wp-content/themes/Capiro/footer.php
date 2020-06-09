@@ -3,7 +3,7 @@
           <div class="main-footer__content">
             <div class="main-footer__item">
               <div class="main-footer__img">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/logo.png" alt="">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/logo.svg" alt="">
               </div>
               <div class="main-footer__description">
                 <p>Encuentra ese lugar que siempre has soñado para tener tu casa propia en una ubicación privilegiada en el municipio de La Ceja, un sector de alta valorización, con un entorno natural y cerca a todo lo que necesitas. Aplican subsidios.
@@ -78,22 +78,16 @@
   <div id="myModal" class="modal">
   <span class="close cursor" onclick="closeModal()">&times;</span>
   <div class="modal-content">
-
+  <?php $args = array( 'post_type' => 'galeria');
+                        $countGalery = 1;
+                 ?>   
+    <?php $loop = new WP_Query( $args ); ?>
+    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
     <div class="mySlides">
-      <img src="<?php echo get_template_directory_uri();?>/assets/img/gallery1.jpg" style="width:100%">
+      <img src="<?php echo get_the_post_thumbnail_url(); ?>" style="width:100%">
     </div>
 
-    <div class="mySlides">
-      <img src="<?php echo get_template_directory_uri();?>/assets/img/about.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img src="<?php echo get_template_directory_uri();?>/assets/img/Zonas/image.jpg" style="width:100%">
-    </div>
-    
-    <div class="mySlides">
-      <img src="<?php echo get_template_directory_uri();?>/assets/img/gallery4.jpg" style="width:100%">
-    </div>
+    <?php $countGalery++; endwhile; ?>
     
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -105,24 +99,24 @@
   <!-- MODAL -->
 
   <div id="myModal1" class="modal">
-    <span class="close cursor" onclick="closeModal1()">&times;</span>
-    <div class="modal-content">
+      <span class="close cursor" onclick="closeModal1()">&times;</span>
+      <div class="modal-content">
+      <?php $args = array( 'post_type' => 'planos');
+        $countGalery2 = 1;?>   
+      <?php $loop = new WP_Query( $args ); ?>
+      <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+        <div class="mySlides1">
+          <img src="<?php echo get_the_post_thumbnail_url(); ?>" style="width:100%">
+        </div>
+      <?php $countGalery2++; endwhile; ?>
+        
+        
+        <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides1(1)">&#10095;</a>
   
-      <div class="mySlides1">
-        <img src="<?php echo get_template_directory_uri();?>/assets/img/Planos/planos-1.png" style="width:100%">
+  
       </div>
-      
-      <div class="mySlides1">
-        <img src="<?php echo get_template_directory_uri();?>/assets/img/Planos/planos-1.jpg" style="width:100%">
-      </div>
-      
-      <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides1(1)">&#10095;</a>
-
-
     </div>
-  </div>
-  
   <script src="<?php echo get_template_directory_uri();?>/assets/js/jquery.min.js"></script>
   <script src="<?php echo get_template_directory_uri();?>/assets/js/bootstrap.min.js"></script>
   <script src="<?php echo get_template_directory_uri();?>/assets/js/slick.min.js"></script>

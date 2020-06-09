@@ -2,9 +2,16 @@
         <div class="container-fluid">
           <div class="main-zone__content">
             <div class="main-zone__item">
-              <div class="main-zone__img main-maps__img" onclick="openModal1();currentSlide1(1)">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/Planos/planos-1.png" alt="">
-              </div>
+
+              <?php $args = array( 'post_type' => 'planos');
+                                  $countGalery = 1;
+                          ?>   
+              <?php $loop = new WP_Query( $args ); ?>
+              <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                <div class="main-zone__img main-maps__img" onclick="openModal1();currentSlide1(<?php echo  $countGalery; ?>)">
+                  <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+                </div>
+                <?php $countGalery++; endwhile; ?>
             </div>
             <div class="main-zone__item">
               <div class="main-title__general">

@@ -63,7 +63,7 @@
           <div class="container-fluid">
             <div class="main-brand" >
               <a class="navbar-brand" href="index.html">
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/logo-capiro.png" alt="">
+                  <img src="<?php echo get_template_directory_uri();?>/assets/img/logo-capiro.svg" alt="">
                 </a>
               <button class="navbar-toggler p-2 border-0 hamburger hamburger--elastic ml-autos" data-toggle="offcanvas" type="button">
                 <span class="hamburger-box">

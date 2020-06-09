@@ -73,7 +73,7 @@
                         <a href="<?php echo get_template_directory_uri();?>/assets/pdf/MANUAL_DE_POLITICAS_PROMOTORA.pdf" target="blank">Politicas y Privacidad</a>
                       </label>
                     </div>
-                  <div class="main-contact__btnbox">
+                  <div class="">
                     <a class="btn_custom btn--small btn--filled" href="#">
                       Enviar
                     </a>
