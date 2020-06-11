@@ -1,4 +1,4 @@
-   <section class="main-maps">
+   <section class="main-maps" id="planos-proyecto">
         <div class="container-fluid">
           <div class="main-zone__content">
             <div class="main-zone__item">

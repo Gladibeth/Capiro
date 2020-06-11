@@ -1,23 +1,27 @@
-      <section class="main-about">
-        <div class="container-fluid">
-          <div class="main-about__content">
-            <div class="main-about__item">
-              <div class="main-title__general">
-                <p>
-                  acerca del <br>
-                  <strong>proyecto</strong>
-                </p>
-              </div>
-              <div class="main-description__general">
-                <p>Un proyecto de lotes para bodegas en un sector de alta valorización del municipio de La Ceja, una excelente ubicación que se conecta fácilmente con todos los municipios del valle de San Nicolás, el aeropuerto Jose Maria Cordova.</p>
-              </div>
-            </div>
-            <div class="main-about__item">
-              <div class="main-about__img">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/about.jpg" alt="">
-              </div>
-            </div>
-            
-          </div>
+<section class="main-about" id="acerca-proyecto">
+  <?php $args = array( 'post_type' => 'Acerca', 'posts_per_page' => 1);?>   
+  <?php $loop = new WP_Query( $args ); ?>
+  <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+  <div class="container-fluid">
+    <div class="main-about__content">
+      <div class="main-about__item">
+        <div class="main-title__general">
+          <p>
+            acerca del <br>
+            <strong>proyecto</strong>
+          </p>
         </div>
-      </section>
+        <div class="main-description__general">
+          <p><?php the_content(); ?></p>
+        </div>
+      </div>
+      <div class="main-about__item">
+        <div class="main-about__img">
+          <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <?php endwhile; ?>
+</section>

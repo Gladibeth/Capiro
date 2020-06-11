@@ -51,7 +51,7 @@
 <body>
   <div class="padd_top">
     <div class="fixed-buttons">
-      <a class="whatsapp" href="http://api.whatsapp.com/send?phone=" target="blank">
+      <a class="whatsapp" href="https://api.whatsapp.com/send?phone=573134141090" target="blank">
         <img src="<?php echo get_template_directory_uri();?>/assets/img/whatsapp.png">
       </a>
       <div class="js-gotop">

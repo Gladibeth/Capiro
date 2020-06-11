@@ -182,7 +182,7 @@ section {
 
 /****** SCROLL *****/
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
   background-color: #fff !important;
@@ -191,7 +191,7 @@ section {
 ::-webkit-scrollbar-thumb {
   border-radius: 5px;
   background: #9E9E9E;
-}
+} */
 
 .fixed-buttons {
   position: fixed;
@@ -1502,4 +1502,8 @@ img.hover-shadow {
 .mySlides .main-details__slick--img,.mySlides1 .main-details__slick--img, .mySlides2 .main-details__slick--img, .mySlides3 .main-details__slick--img{
 	/* height: 500px !important; */
 	height: 75vh !important;
+}
+a:hover {
+  color: #0056b3;
+  text-decoration: none !important;
 }

@@ -22,20 +22,21 @@
             <div class="main-footer__item">
               <ul class='menu'>
                 <li class='menu-title'>MENÚ</li>
+                <li class='menu-title'>MENÚ</li>
                 <li>
-                  <a class='scroll-link' href='#sabaneta'>Detalles del proyecto</a>
+                  <a class='scroll-link' href='#detalles-proyecto'>Detalles del proyecto</a>
                 </li>
                 <li>
-                  <a class='scroll-link' href='#ciudadela'>Acerca del proyecto</a>
+                  <a class='scroll-link' href='#acerca-proyecto'>Acerca del proyecto</a>
                 </li>
                 <li>
-                  <a class='scroll-link' href='#video'>Galería</a>
+                  <a class='scroll-link' href='#galeria-proyecto'>Galería</a>
                 </li>
                 <li>
-                  <a class='scroll-link' href='#proyectos'>Zonas comunes</a>
+                  <a class='scroll-link' href='#caracteristica-proyecto'>Zonas comunes</a>
                 </li>
                 <li>
-                  <a class='scroll-link' href='#proyectos'>Planos del proyecto</a>
+                  <a class='scroll-link' href='#planos-proyecto'>Planos del proyecto</a>
                 </li>
                 <li>
                   <a class='scroll-link' href='#ubicacion'>Ubicación</a>
@@ -60,7 +61,7 @@
                 </dd>
                 <dt>Celular</dt>
                 <dd>
-                  <a target="_blank" href='tel:573134141090'>+ 57 3134141090</a>
+                  <a target="_blank" href='https://api.whatsapp.com/send?phone=573134141090'>+ 57 3134141090</a>
                 </dd>
               </dl>            
               <a class='btn_custom btn--large btn--filledTransparent' target="_blank" href='<?php echo get_template_directory_uri();?>/assets/pdf/Presentacion- Capiro.pdf'>Descargar Brochure</a>
