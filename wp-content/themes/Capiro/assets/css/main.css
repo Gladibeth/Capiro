@@ -1523,4 +1523,17 @@ a:hover {
 
 .main-oneform__item ._form-thank-you{
   color:  #fff !important;
+  font-size: 20px;
+}
+
+.main-oneform__item ._form-thank-you{
+  color:  #fff !important;
+  font-size: 20px ;
+}
+._error-inner{
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  font-size: 15px;
+  padding: 2px 5px;
 }
