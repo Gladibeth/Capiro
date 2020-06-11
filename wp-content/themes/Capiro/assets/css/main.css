@@ -1520,3 +1520,7 @@ a:hover {
   color: #0056b3;
   text-decoration: none !important;
 }
+
+.main-oneform__item ._form-thank-you{
+  color:  #fff !important;
+}
