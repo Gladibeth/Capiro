@@ -22,7 +22,6 @@
             <div class="main-footer__item">
               <ul class='menu'>
                 <li class='menu-title'>MENÚ</li>
-                <li class='menu-title'>MENÚ</li>
                 <li>
                   <a class='scroll-link' href='#detalles-proyecto'>Detalles del proyecto</a>
                 </li>
