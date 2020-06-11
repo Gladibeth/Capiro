@@ -893,7 +893,7 @@ select option{
     text-transform: uppercase;
 }
 .main-details__description p{
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.47;
   letter-spacing: 0.04px;
   color: #474747;
