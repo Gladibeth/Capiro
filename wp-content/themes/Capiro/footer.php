@@ -11,10 +11,10 @@
                   </p>
               </div>
               <div class="main-footer__icon">
-                <a  target="_blank" href="https://www.facebook.com/nivelpropiedadraiz">
+                <a  class="wow fadeIn" data-wow-delay='0.2s' target="_blank" href="https://www.facebook.com/nivelpropiedadraiz">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/fb.png" alt="">
                 </a>
-                <a  target="_blank" href="https://www.instagram.com/nivelpropiedadraiz">
+                <a  class="wow fadeIn" data-wow-delay='0.3s' target="_blank" href="https://www.instagram.com/nivelpropiedadraiz">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/instagram.png" alt="">
                 </a>
               </div>
@@ -120,8 +120,13 @@
   <script src="<?php echo get_template_directory_uri();?>/assets/js/jquery.min.js"></script>
   <script src="<?php echo get_template_directory_uri();?>/assets/js/bootstrap.min.js"></script>
   <script src="<?php echo get_template_directory_uri();?>/assets/js/slick.min.js"></script>
+  <script src="<?php echo get_template_directory_uri();?>/assets/js/wow.min.js"></script>
   <script src="<?php echo get_template_directory_uri();?>/assets/js/setting-slick.js"></script>
   <script src="<?php echo get_template_directory_uri();?>/assets/js/main.js"></script>
+  <script>
+   new WOW().init();
+
+  </script>
   <?php wp_footer(); ?>
 </body>
 </html>

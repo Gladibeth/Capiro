@@ -39,7 +39,6 @@
   <link href="<?php echo get_template_directory_uri();?>/assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="<?php echo get_template_directory_uri();?>/assets/css/slick.css" rel="stylesheet">
   <link href="<?php echo get_template_directory_uri();?>/assets/css/slick-theme.css" rel="stylesheet">
-  <link href="<?php echo get_template_directory_uri();?>/assets/css/animation.css" rel="stylesheet">
   <link href="<?php echo get_template_directory_uri();?>/assets/css/animate.css" rel="stylesheet">
   <link href="<?php echo get_template_directory_uri();?>/assets/css/font-awesome.css" rel="stylesheet">
   <link href="<?php echo get_template_directory_uri();?>/assets/css/offcanvas.css" rel="stylesheet">

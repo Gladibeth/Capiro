@@ -15,7 +15,7 @@
           <p><?php the_content(); ?></p>
         </div>
       </div>
-      <div class="main-about__item">
+      <div class="main-about__item wow fadeInRight"  data-wow-delay='.5s'>
         <div class="main-about__img">
           <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
         </div>

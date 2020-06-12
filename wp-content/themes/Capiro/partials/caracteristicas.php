@@ -16,7 +16,7 @@
             <strong>del proyecto</strong>
           </p>
         </div>
-        <div class="main-zone__list">
+        <div class="main-zone__list wow fadeIn" data-wow-delay='0.2s'>
           <div class="main-zone__listimg">
             <img src="<?php echo get_template_directory_uri();?>/assets/img/Zonas/icon.png" alt="">
           </div>
@@ -24,7 +24,7 @@
             <p><?php the_field('caracteristicas_1'); ?></p>
           </div>
         </div>
-        <div class="main-zone__list">
+        <div class="main-zone__list wow fadeIn" data-wow-delay='0.3s'>
           <div class="main-zone__listimg">
             <img src="<?php echo get_template_directory_uri();?>/assets/img/Zonas/icon-2.png" alt="">
           </div>
@@ -32,7 +32,7 @@
             <p><?php the_field('caracteristicas_2'); ?> </p>
           </div>
         </div>
-        <div class="main-zone__list">
+        <div class="main-zone__list wow fadeIn" data-wow-delay='0.4s'>
           <div class="main-zone__listimg">
             <img src="<?php echo get_template_directory_uri();?>/assets/img/Zonas/icon-3.png" alt="">
           </div>
@@ -40,7 +40,7 @@
             <p><?php the_field('caracteristicas_3'); ?> </p>
           </div>
         </div>
-        <div class="main-zone__list">
+        <div class="main-zone__list wow fadeIn" data-wow-delay='0.5s'>
           <div class="main-zone__listimg">
             <img src="<?php echo get_template_directory_uri();?>/assets/img/Zonas/icon-4.png" alt="">
           </div>
