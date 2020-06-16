@@ -956,7 +956,7 @@ select option{
   background-image: url(../img/mask.png);
   height: 80%;
   background-size: contain;
-  /* opacity: 0.8; */
+  opacity: 0.6;
 }
 .main-about__content{
   display: grid;
