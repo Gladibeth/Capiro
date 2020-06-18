@@ -6,7 +6,7 @@
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/logo.svg" alt="">
               </div>
               <div class="main-footer__description">
-                <p>Encuentra ese lugar que siempre has soñado para tener tu casa propia en una ubicación privilegiada en el municipio de La Ceja, un sector de alta valorización, con un entorno natural y cerca a todo lo que necesitas. Aplican subsidios.
+                <p>Capiro Parque Empresarial es un proyecto de lotes para bodegas, con áreas desde 112 m² en una zona privilegiada con gran crecimiento y valorización del municipo La Ceja, Antioquia. Un punto estratégico, dotado con parqueadero privado, vías internas amplias y zonas verdes.
 
                   </p>
               </div>
